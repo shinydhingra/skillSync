@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Dashboard - SkillSync</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>SkillSync Dashboard</h1>
+
+<h3>Welcome Learner 👋</h3>
+
+<h3>Add Your Skill</h3>
+
+<input type="text" id="skillInput" placeholder="Enter Skill Name"><br><br>
+
+<input type="text" id="goalInput" placeholder="Daily Goal (e.g. 1 hour)"><br><br>
+
+<button onclick="addSkill()">Add Skill</button>
+
+<hr>
+
+<h3>Your Skills</h3>
+<ul id="skillList">
+
+<p id="streakDisplay">🔥 Current Streak: 0 Days</p>
+
+<button onclick="markComplete()">Mark Today Complete</button>
+
+<hr>
+
+<!-- ✅ Progress Section -->
+<p>Progress:</p>
+<progress id="progressBar" value="0" max="100"></progress>
+<span id="progressText">0%</span>
+
+<!-- ✅ Motivational Popup -->
+<div id="popup" style="display:none; 
+position:fixed; 
+top:30%; 
+left:50%; 
+transform:translate(-50%, -50%);
+background:#fff; 
+padding:20px; 
+border:2px solid black;
+border-radius:10px;
+text-align:center;">
+
+<p id="popupText"></p>
+<button onclick="closePopup()">OK</button>
+
+</div>
+
+<!-- JS FILE -->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
