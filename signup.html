@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Signup - SkillSync</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - SkillSync</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Create SkillSync Account</h1>
+<div class="login-container">
 
-<input type="text" placeholder="Enter Name"><br><br>
-<input type="text" placeholder="Enter Email"><br><br>
-<input type="password" placeholder="Create Password"><br><br>
+    <div class="login-card">
+        <h1>Create Account</h1>
+        <p>Start your journey with SkillSync</p>
 
-<button>Signup</button>
+        <form action="dashboard.html">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="extra">
+            <span>Already have an account?</span>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
